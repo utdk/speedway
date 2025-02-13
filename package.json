@@ -1,0 +1,27 @@
+{
+  "name": "@utexas/speedway",
+  "version": "1.0.0",
+  "description": "Drupal theme used with the UT Drupal Kit",
+  "repository": {
+    "type": "git",
+    "url": "git@github.austin.utexas.edu:eis1-wcs/speedway.git"
+  },
+  "author": {
+    "name": "Web Content Management Solutions Team, Information Technology Services, The University of Texas at Austin",
+    "email": "drupal-kit-support@utlists.utexas.edu",
+    "url": "https://drupalkit.its.utexas.edu"
+  },
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "watch": "sass --watch --no-source-map --update --style=expanded src/scss/build:css",
+    "postCSS": "npx postcss css/*.css --use autoprefixer -d css --no-map",
+    "build": "sass --no-source-map --style=expanded src/scss/build:css && npm run postCSS"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "bootstrap": "^5.3.3",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.77.6"
+  }
+}

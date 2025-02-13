@@ -1,0 +1,4 @@
+global:
+  css:
+    layout:
+      css/bootstrap-customized.css: {}
